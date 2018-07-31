@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>中共市委组织部干部研判管理系统</title>
+    <link rel="stylesheet" href="./css/detail.css">
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="./js/plugin/selectivizr.js"></script>
+    <![endif]-->
+
+    <!--打星插件-->
+    <script src="./js/plugin/starScore.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo"></div>
+        <ul class="nav">
+            <li><a href="./ypfx.html">单位分类</a></li>
+            <li class="active"><a href="./bzyp.html">班子研判</a></li>
+            <li><a href="">对比分析</a></li>
+            <li><a href="">打标签</a></li>
+        </ul>
+    </div>
+
+    <div class="content flex flex-row">
+        <!--左边栏-->
+        <div class="aside-left">
+            <div class="aside-left-view flex flex-col">
+                <!--用户信息-->
+                <div class="aside-left-top">
+                    <div class="user">
+                        <img src="./img/detail/yh.png" alt="">
+                        <dl>
+                            <dt>
+                                <h1>李志</h1>
+                                <span>湖北黄石</span>
+                            </dt>
+                            <dd>1968.07（49岁）</dd>
+                            <dd>市委党史研究室主任</dd>
+                        </dl>
+                    </div>
+                    <!--btn-->
+                    <div class="action">
+                        <button>打标签</button>
+                        <button>上传考察材料</button>
+                    </div>
+                    <!--title-->
+                    <div class="title">
+                        <div class="title-bg">胜任能力</div>
+                    </div>
+                    <!--属性-->
+                    <div class="property">
+                        <ul>
+                            <li>
+                                <span>能&nbsp;&nbsp;力：</span>
+                                <b>12分</b>
+                            </li>
+                            <li>
+                                <span>熟悉领域：</span>
+                                <b>12分</b>
+                            </li>
+                            <li>
+                                <span>特&nbsp;&nbsp;性：</span>
+                                <b>12分</b>
+                            </li>
+                            <li>
+                                <span>专&nbsp;&nbsp;业：</span>
+                                <b>12分</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--正面标签-->
+                <div class="aside-left-bottom">
+                    <div class="item">
+                        <div class="font-box-fn">正面标签</div>
+                        <ul>
+                            <li><span>开拓进取</span></li>
+                            <li><span>担当负责</span></li>
+                            <li><span>务实高效</span></li>
+                            <li><span>考虑周全</span></li>
+                            <li><span>视野开阔</span></li>
+                            <li><span>公道正派</span></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="font-box-fn">负面标签</div>
+                        <ul>
+                            <li><span>安于现状</span></li>
+                            <li><span>推诿拖延</span></li>
+                            <li><span>作风漂浮</span></li>
+                            <li><span>方法简单</span></li>
+                            <li><span>思想僵化</span></li>
+                            <li><span>处事不公</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--中间栏-->
+        <div class="aside-middle flex flex-col">
+            <div class="aside-middle-top flex">
+                <!--熟悉领域-->
+                <div class="aside-middle-top-item">
+                    <div class="title">
+                        <span>熟悉领域</span>
+                        <div class="bg"></div>
+                    </div>
+                    <!--star-->
+                    <ul class="star-list">
+                        <li>
+                            <span>计划联络类</span>
+                            <div class="atar_Show">
+                                <p tip="3.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>服务保障类</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>科教文卫类</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>经济管理类</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--能力-->
+                <div class="aside-middle-top-item">
+                    <div class="title">
+                        <span>能力</span>
+                        <div class="bg"></div>
+                    </div>
+                    <!--star-->
+                    <ul class="star-list">
+                        <li>
+                            <span>改革创新</span>
+                            <div class="atar_Show">
+                                <p tip="3.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>战略决策</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>组织领导</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>沟通协调</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--专业-->
+                <div class="aside-middle-top-item">
+                    <div class="title">
+                        <span>专业</span>
+                        <div class="bg"></div>
+                    </div>
+                    <!--star-->
+                    <ul class="star-list">
+                        <li>
+                            <span>教育学</span>
+                            <div class="atar_Show">
+                                <p tip="3.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>理学</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--历任岗位-->
+                <div class="aside-middle-top-item">
+                    <div class="title">
+                        <span>历任岗位</span>
+                        <div class="bg"></div>
+                    </div>
+                    <!--star-->
+                    <ul class="star-list">
+                        <li>
+                            <span>人事</span>
+                            <div class="atar_Show">
+                                <p tip="3.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>后勤</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>教学</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>调研</span>
+                            <div class="atar_Show">
+                                <p tip="2.5"></p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class="aside-middle-bottom">
+                <div class="aside-middle-middle">
+                    <div class="tab"><b>文字</b></div>
+                    <div class="tab"><b>图标</b></div>
+                </div>
+                <div class="theme">
+                    <ul>
+                        <li>
+                            <b>李志</b>
+                            <dl class="parent-one">
+                                <dt>
+                                    <em>中国人民公安大学</em>
+                                    <div>
+                                        <p>同学</p>
+                                        <span>(3人)</span>
+                                        <div class="child-one">
+                                            <div class="img-div">
+                                                <em></em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>何冰（市法制局副局长）</b>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="child-two">
+                                            <div class="img-div">
+                                                <em></em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>黄贺（市委宣传部办公室副主任）</b>
+                                            </div>
+                                        </div>
+                                        <div class="child-three">
+                                            <div class="img-div">
+                                                <em></em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>赵兴（市司法局办公室主任）</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dt>
+                            </dl>
+                            <dl class="parent-two">
+                                <dt>
+                                    <em></em>
+                                    <div>
+                                        <p>同事</p>
+                                        <span>(2人)</span>
+                                        <div class="child-one">
+                                            <div class="img-div">
+                                                <em>2016.12市委宣传部</em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>张三三（市委组织部办公室主任）</b>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="child-two">
+                                            <div class="img-div">
+                                                <em>2016.12市工商局</em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>李四（市人大常委会副秘书长）</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dt>
+                            </dl>
+                            <dl class="parent-three">
+                                <dt>
+                                    <em></em>
+                                    <div>
+                                        <p>亲属</p>
+                                        <span>(2人)</span>
+                                        <div class="child-one">
+                                            <div class="img-div">
+                                                <em>父子</em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>李林（市发改局副局长）</b>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="child-two">
+                                            <div class="img-div">
+                                                <em>夫妻</em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>张三（市国资委科员）</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dt>
+                            </dl>
+                            <dl class="parent-four">
+                                <dt>
+                                    <em></em>
+                                    <div>
+                                        <p>同乡</p>
+                                        <span>(3人)</span>
+                                        <div class="child-one">
+                                            <div class="img-div">
+                                                <em></em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>李四（市法制局副局长）</b>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="child-two">
+                                            <div class="img-div">
+                                                <em></em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>王五（市信息化办科员）</b>
+                                            </div>
+                                        </div>
+                                        <div class="child-three">
+                                            <div class="img-div">
+                                                <em></em>
+                                                <img src="./img/detail/z.png" alt="">
+                                                <b>赵六（市府办秘书一科科员）</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dt>
+                            </dl>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="tip-group">
+                    <ul>
+                        <li>
+                            <em></em>
+                            <span>同事关系</span>
+                        </li>
+                        <li>
+                            <em></em>
+                            <span>亲属关系</span>
+                        </li>
+                        <li>
+                            <em></em>
+                            <span>同乡关系</span>
+                        </li>
+                        <li>
+                            <em></em>
+                            <span>同事关系</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--右边栏-->
+        <div class="aside-right">
+            <!--个人成长经历-->
+            <div class="font-box-fn">个人成长经历</div>
+            <ul class="jl">
+                <li>
+                    <div class="title">
+                        <em></em>
+                        2017.02（49岁） 副处级
+                    </div>
+                    <div class="jl-content">
+                        <div class="view">
+                            <ul>
+                                <li class="flex flex-row">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;任职：</span>
+                                    <em>2年</em>
+                                </li>
+                                <li class="flex flex-row">
+                                    <span>岗位数：</span>
+                                    <em>1</em>
+                                </li>
+                            </ul>
+                            <ol class="bar">
+                                <li>
+                                    <span>计划联络类</span>
+                                    <div class="bottom">
+                                        <div class="top" style="width: 30%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>科教文卫类</span>
+                                    <div class="bottom">
+                                        <div class="top" style="width: 30%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>服务保障类</span>
+                                    <div class="bottom">
+                                        <div class="top" style="width: 30%;"></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <em></em>
+                        2010.04（42岁） 正科级
+                    </div>
+                    <div class="jl-content">
+                        <div class="view">
+                            <ul>
+                                <li class="flex flex-row">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;任职：</span>
+                                    <em>6年</em>
+                                </li>
+                                <li class="flex flex-row">
+                                    <span>岗位数：</span>
+                                    <em>3</em>
+                                </li>
+                            </ul>
+                            <ol class="bar">
+                                <li>
+                                    <span>计划联络类</span>
+                                    <div class="bottom">
+                                        <div class="top" style="width: 30%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>科教文卫类</span>
+                                    <div class="bottom">
+                                        <div class="top" style="width: 30%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>服务保障类</span>
+                                    <div class="bottom">
+                                        <div class="top" style="width: 30%;"></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <em></em>
+                        2001.09（34岁） 副科级
+                    </div>
+                    <div class="jl-content">
+                        <div class="view">
+                            <ul>
+                                <li class="flex flex-row">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;任职：</span>
+                                    <em>12年</em>
+                                </li>
+                                <li class="flex flex-row">
+                                    <span>岗位数：</span>
+                                    <em>4</em>
+                                </li>
+                            </ul>
+                            <ol class="bar">
+                                <li>
+                                    <span>计划联络类</span>
+                                    <div class="bottom">
+                                        <div class="top" style="width: 30%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>科教文卫类</span>
+                                    <div class="bottom">
+                                        <div class="top" style="width: 30%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>服务保障类</span>
+                                    <div class="bottom">
+                                        <div class="top" style="width: 30%;"></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <em></em>
+                        1992.05（24岁）入党
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <em></em>
+                        1987.06（19岁）参加工作
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<!--<div class="footer">-->
+<!--<div>所有权：珠海市委组织部 | 版权所有</div>-->
+<!--</div>-->
+<script src="./js/header.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/detail.js"></script>
+</body>
+</html>

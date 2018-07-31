@@ -1,0 +1,48 @@
+@import 'variable';
+html,body{
+  padding: 0;
+  margin: 0;
+  width: @max;
+  height: @max;
+}
+body{
+  background:url(../img/bg.png) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.container{
+  width: @max;
+  height: @max;
+  //min-width: 1920px;
+  //background:url(../img/bg.png) no-repeat;
+  //-webkit-background-size: 100%;
+  //background-size: 100%;
+}
+
+ul,ol,dl,dt,dd{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+p{
+  margin: 0;
+}
+button{
+  padding: 0;
+}
+
+.flex{
+  display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+  display: -webkit-box;   /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;      /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;   /* 混合版本语法: IE 10 */
+  display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.flex-col{
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+.flex-row{
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}

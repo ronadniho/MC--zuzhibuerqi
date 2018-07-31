@@ -1,0 +1,233 @@
+/*ypfx*/
+/*search*/
+@media (min-width: 1440px) {
+  .nav {
+    font-size: 14px;
+  }
+  .nav li {
+    width: 11.43em;
+  }
+}
+@media (max-width: 1440px) {
+  .nav {
+    font-size: 12px;
+  }
+  .nav li {
+    width: 11.34em;
+  }
+}
+@media (min-width: 1600px) {
+  .nav {
+    font-size: 16px;
+  }
+  .nav li {
+    width: 10em;
+  }
+}
+@media (min-width: 1920px) {
+  .nav {
+    font-size: 18px;
+  }
+  .nav li {
+    width: 8.89em;
+  }
+}
+.header {
+  width: 100%;
+  height: 84px;
+  display: flex;
+}
+.header .logo {
+  width: 780px;
+  height: 84px;
+  background: url(../img/logo.png) no-repeat;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/logo.png', sizingMethod='scale');
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.header .nav {
+  flex-grow: 1;
+  margin-top: 24px;
+  float: left;
+  height: 60px;
+  border-bottom: 4px solid #49d9fe;
+  box-sizing: border-box;
+  background-color: #04417a;
+}
+.header .nav li {
+  width: 1.6rem;
+  float: left;
+  text-align: center;
+}
+.header .nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  line-height: 60px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.header .nav li:hover {
+  cursor: pointer;
+}
+.header .nav li.active {
+  background-color: #49d9fe;
+}
+.header .nav li.active a {
+  color: #003872;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: url(../img/bg.png) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+ul,
+ol,
+dl,
+dt,
+dd {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+button {
+  padding: 0;
+}
+.flex {
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.flex-col {
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+.flex-row {
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.content {
+  padding-top: .3rem;
+  box-sizing: border-box;
+}
+.content .search {
+  flex-grow: 1;
+  height: 70px;
+  padding: 8px 0;
+  border-top: 2px solid #0460ad;
+  border-bottom: 2px solid #0460ad;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.content .search .search-view {
+  width: 1035px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+.content .search .search-view input {
+  position: absolute;
+  left: 50%;
+  margin-left: -517.5px;
+  width: 1035px;
+  height: 50px;
+  line-height: 46px;
+  border: 2px solid #099cd8;
+  background-color: transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 51px;
+  color: #3399ff;
+  font-size: 16px;
+}
+.content .search .search-view a {
+  display: block;
+  background: url(../img/ypfx/search.png) no-repeat center center;
+  width: 51px;
+  height: 50px;
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.content .search .search-view a:hover {
+  cursor: pointer;
+}
+.footer {
+  text-align: center;
+  color: #99ccff;
+  font-size: 14px;
+  line-height: .8rem;
+  height: .8rem;
+}
+.meau {
+  height: 780px;
+  border-radius: 10px;
+  border: 2px solid #099cd8;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.meau .meau-ul {
+  width: 100%;
+  height: 100%;
+}
+.meau .meau-ul > li {
+  padding: 0 .66rem .48rem;
+  border-bottom: 2px solid #099cd8;
+  box-sizing: border-box;
+}
+.meau .meau-ul > li .meau-li-title {
+  font-size: .2rem;
+  color: #99ccff;
+  border-bottom: 2px dashed #015cb6;
+  line-height: .55rem;
+  padding-top: 9px;
+  font-weight: 400;
+}
+.meau .meau-ul > li ol {
+  width: 100%;
+  content: '';
+  display: table;
+  clear: both;
+}
+.meau .meau-ul > li ol li {
+  float: left;
+  width: 1.5rem;
+  height: .46rem;
+  line-height: .44rem;
+  box-sizing: border-box;
+  border: 2px solid #099cd8;
+  border-radius: 5px;
+  margin-right: 1rem;
+  margin-top: .3rem;
+  text-align: center;
+  font-size: .12rem;
+}
+.meau .meau-ul > li ol li b {
+  color: #fff;
+}
+/*# sourceMappingURL=search.css.map */

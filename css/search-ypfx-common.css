@@ -1,0 +1,48 @@
+/*ypfx*/
+.content {
+  padding-top: 30px;
+}
+.content .search {
+  height: 70px;
+  padding: 8px 0;
+  border-top: 2px solid #0460ad;
+  border-bottom: 2px solid #0460ad;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.content .search input {
+  width: 1035px;
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 51px;
+  color: #3399ff;
+  font-size: 16px;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(90deg, #055198, #055198), linear-gradient(90deg, #0dc2d8, #098bdc, #0dc2d8, #098bdc);
+}
+.content .search button {
+  background: url(../img/ypfx/search.png) no-repeat center center;
+  width: 51px;
+  height: 30px;
+  border: 0;
+  position: relative;
+  left: -60px;
+  top: 10px;
+}
+.meau {
+  width: 1900px;
+  height: 780px;
+  border-radius: 10px;
+  border: 2px solid #099cd8;
+  border-image: linear-gradient(to right, #0dc2d8, #098bdc, #0dc2d8, #098bdc) 30 30;
+  margin: 0 auto;
+  display: table;
+  content: '';
+  clear: both;
+}
+/*# sourceMappingURL=search-ypfx-common.css.map */

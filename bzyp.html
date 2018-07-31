@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>中共市委组织部干部研判管理系统</title>
+    <link rel="stylesheet" href="./css/bzyp.css">
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <script src="./js/plugin/highcharts.js"></script>
+    <script src="./js/plugin/breakingNews.js"></script>
+    <script src="./js/plugin/echarts-all.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <script src="https://img.hcharts.cn/highcharts/modules/oldie.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="./js/plugin/selectivizr.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo"></div>
+        <ul class="nav">
+            <li><a href="./ypfx.html">单位分类</a></li>
+            <li class="active"><a href="./bzyp.html">班子研判</a></li>
+            <li><a href="">对比分析</a></li>
+            <li><a href="">打标签</a></li>
+        </ul>
+    </div>
+
+    <div class="content flex flex-row">
+        <!--左边栏-->
+        <div class="aside-left">
+            <div class="flex flex-col aside-left-view">
+                <!--班子成员-->
+                <div class="aside-left-top">
+                    <div class="aside-left-top-title">班子成员</div>
+                    <!--广播-->
+                    <div id="slider">
+                        <em></em>
+                        <div id="breakingnews">
+                            <ul>
+                                <li>本月内预计年龄到期2人</li>
+                                <li>本月内预计年龄到期2人</li>
+                                <li>本月内预计年龄到期2人</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ol>
+                        <li>
+                            <a class="flex flex-row" href="./detail.html">
+                                <img src="./img/bzyp/icon.png" alt="">
+                                <div class="tip">
+                                    <div class="tip-title">主 任</div>
+                                    <dl>
+                                        <dt>郑安兴</dt>
+                                        <dd>湖北黄石人</dd>
+                                        <dd>1968.07生（49岁）</dd>
+                                        <dd>1992.05入党</dd>
+                                        <dd>1987.06工作</dd>
+                                        <dd>大学，经济学硕士</dd>
+                                        <dd>2017.02县处级正职</dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-row" href="./detail.html">
+                                <img src="./img/bzyp/icon.png" alt="">
+                                <div class="tip">
+                                    <div class="tip-title">主 任</div>
+                                    <dl>
+                                        <dt>郑安兴</dt>
+                                        <dd>湖北黄石人</dd>
+                                        <dd>1968.07生（49岁）</dd>
+                                        <dd>1992.05入党</dd>
+                                        <dd>1987.06工作</dd>
+                                        <dd>大学，经济学硕士</dd>
+                                        <dd>2017.02县处级正职</dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex flex-row" href="./detail.html">
+                                <img src="./img/bzyp/icon.png" alt="">
+                                <div class="tip">
+                                    <div class="tip-title">主 任</div>
+                                    <dl>
+                                        <dt>郑安兴</dt>
+                                        <dd>湖北黄石人</dd>
+                                        <dd>1968.07生（49岁）</dd>
+                                        <dd>1992.05入党</dd>
+                                        <dd>1987.06工作</dd>
+                                        <dd>大学，经济学硕士</dd>
+                                        <dd>2017.02县处级正职</dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!--职数超缺-->
+                <div class="aside-left-bottom">
+                    <div class="aside-left-bottom-title">职数超缺</div>
+                    <table border="0" cellpadding="0">
+                        <thead>
+                        <tr>
+                            <td>职务</td>
+                            <td>超缺</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>主任</td>
+                            <td>超1</td>
+                        </tr>
+                        <tr>
+                            <td>副主任</td>
+                            <td>缺1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--中间栏-->
+        <div class="aside-middle">
+            <div class="aside-middle-content">
+                <!--班子能力素质模型-->
+                <div class="item-radar" id="bzmx">
+                    <div class="font-box-fn">班子能力素质模型</div>
+                    <div
+                            id="bzmx-main"
+                            class="radar-context"
+                    ></div>
+                </div>
+
+                <!--标识符-->
+                <div class="tip-radar">
+                    <ol>
+                        <li>
+                            <em></em>
+                            <span>实际</span>
+                        </li>
+                        <li>
+                            <em></em>
+                            <span>标准</span>
+                        </li>
+                    </ol>
+                </div>
+                <!--岗位经历-->
+                <div class="item-radar" id="gwjl">
+                    <div class="font-box-fn">岗位经历</div>
+                    <div
+                            id="gwjl-main"
+                            class="radar-context"
+                    ></div>
+                </div>
+                <!--熟悉领域-->
+                <div class="item-radar" id="sxly">
+                    <div class="font-box-fn">熟悉领域</div>
+                    <div
+                            id="sxly-main"
+                            class="radar-context"
+
+                    ></div>
+                </div>
+                <!--专业-->
+                <div class="item-radar" id="zy">
+                    <div class="font-box-fn">专业</div>
+                    <div
+                            id="zy-main"
+                            class="radar-context"
+                    ></div>
+                </div>
+                <!--能力-->
+                <div class="item-radar" id="nl">
+                    <div class="font-box-fn">能力</div>
+                    <div
+                            id="nl-main"
+                            class="radar-context"
+                    ></div>
+                </div>
+                <!--能力-->
+                <div class="item-radar" id="tx">
+                    <div class="font-box-fn">特性</div>
+                    <div
+                            id="tx-main"
+                            class="radar-context"
+                    ></div>
+                </div>
+            </div>
+        </div>
+
+        <!--右边栏-->
+        <div class="aside-right">
+            <div class="aside-right-view flex flex-col">
+                <!--柱形图-->
+                <div class="bar">
+                    <!--年龄分布-->
+                    <div id="nlfb" class="echarts-bar">
+                        <div class="font-box-fn">年龄分布</div>
+                        <div
+                                id="nlfb-main"
+                                class="radar-context"
+                        ></div>
+                    </div>
+                    <!--学历情况-->
+                    <div id="xlqk" class="echarts-bar">
+                        <div class="font-box-fn">学历情况</div>
+                        <div
+                                id="xlqk-main"
+                                class="radar-context"
+                        ></div>
+                    </div>
+                    <!--任现职级情况-->
+                    <div id="rxzjqk" class="echarts-bar">
+                        <div class="font-box-fn">任现职级情况</div>
+                        <div
+                                id="rxzjqk-main"
+                                class="radar-context"
+                        ></div>
+                    </div>
+                </div>
+                <!--关系-->
+                <div class="relationship">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="./img/bzyp/icon.png" alt="">
+                                <div class="name">
+                                    <span>关安兴</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tip">
+                                <span>同学</span>
+                            </div>
+                            <img src="./img/bzyp/icon.png" alt="">
+                            <div class="name">
+                                <span>关安兴</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tip">
+                                <span>同学</span>
+                            </div>
+                            <img src="./img/bzyp/icon.png" alt="">
+                            <div class="name">
+                                <span>关安兴</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--<div class="footer">-->
+<!--<div>所有权：珠海市委组织部 | 版权所有</div>-->
+<!--</div>-->
+</div>
+<script src="./js/header.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/bzyp.js"></script>
+</body>
+</html>

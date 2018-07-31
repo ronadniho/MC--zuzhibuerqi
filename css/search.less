@@ -1,0 +1,65 @@
+@import 'variable';
+@import 'header';
+@import 'base';
+@import 'search-ypfx-common';
+@import 'footer';
+
+.meau {
+  //width: @max;
+  height: 780px;
+  border-radius: 10px;
+  border: 2px solid @no-liner;
+  //border-image: linear-gradient(to right, @liner-left, @liner-right, @liner-left, @liner-right) 30 30;
+  //margin: 0 auto;
+  overflow-y: auto;
+  box-sizing: border-box;
+  .meau-ul {
+    width: @max;
+    height: @max;
+    > li {
+      //padding: 0 66px 48px;
+      padding: 0 .66rem .48rem;
+      border-bottom: 2px solid @no-liner;
+      box-sizing: border-box;
+      .meau-li-title {
+        //font-size: @menu-title-size;
+        font-size: .2rem;
+        color: @menu-title-color;
+        border-bottom: 2px dashed @menu-title-border-color;
+        //line-height: 55px;
+        line-height: .55rem;
+        padding-top: 9px;
+        font-weight: 400;
+
+      }
+      ol {
+        width: @max;
+        content: '';
+        display: table;
+        clear: both;
+        li {
+          float: left;
+          //width: 150px;
+          //height: 46px;
+          //line-height: 44px;
+          width: 1.5rem;
+          height: .46rem;
+          line-height: .44rem;
+          box-sizing: border-box;
+          border: 2px solid @no-liner;
+          border-radius: 5px;
+          //margin-right: 100px;
+          margin-right: 1rem;
+          //margin-top: 30px;
+          margin-top: .3rem;
+          text-align: center;
+          font-size: .12rem;
+          b {
+            color: @menu-li-color;
+          }
+        }
+      }
+    }
+  }
+}
+

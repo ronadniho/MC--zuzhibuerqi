@@ -1,2 +1,0 @@
-# MC--zuzhibuerqi
-MC--zuzhibuerqi
